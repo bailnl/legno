@@ -1,0 +1,10 @@
+{
+  "name": "legno-theme-default",
+  "version": "0.0.0",
+  "description": "default theme for legno.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bailnl",
+  "license": "MIT"
+}
