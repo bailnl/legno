@@ -18,6 +18,7 @@
   "homepage": "https://github.com/legno/legno#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.19.0",
     "lerna": "^2.9.0"
   },
   "config": {

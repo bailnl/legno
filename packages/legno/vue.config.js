@@ -1,12 +1,14 @@
+const path = require("path")
 module.exports = {
   configureWebpack: {
     entry: {
-      app: './examples/main.js',
+      app: "./examples/main.js",
     },
-    alias: {
-      legon: './src'
+    resolve: {
+      alias: {
+        legno: path.resolve(__dirname, "./src/index.js"),
+      },
     },
   },
-  baseUrl: '/',
   lintOnSave: false,
 }
