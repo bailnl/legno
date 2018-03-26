@@ -1,0 +1,61 @@
+
+// input status
+// == when focus or actived
+@mixin active($color: $--outline-color) {
+  border-color: colorPalette($color, 5);
+  outline: 0;
+  box-shadow: 0 0 $--outline-blur-size $--outline-width fade($color, 20%);
+}
+
+// == when hoverd
+@mixin hover($color: $--input-hover-border-color) {
+  border-color: colorPalette($color, 5);
+}
+
+@mixin disabled {
+  background-color: $--input-disabled-bg;
+  opacity: 1;
+  cursor: not-allowed;
+  color: $--disabled-color;
+  &:hover {
+    @include hover($--input-border-color);
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    color: $--input-placeholder-color
+  }
+}
+
+.o-input {
+  @include reset-component();
+  position: relative;
+  display: inline-block;
+  padding: $--input-padding-vertical-base $--input-padding-horizontal-base;
+  width: 100%;
+  height: $--input-height-base;
+  font-size: $--font-size-base;
+  line-height: $--line-height-base;
+  color: $--input-color;
+  background-color: $--input-bg;
+  background-image: none;
+  border: $--border-width-base $--border-style-base $--input-border-color;
+  border-radius: $--border-radius-base;
+  transition: all .3s;
+
+  &:hover {
+    @include hover;
+  }
+
+  &:focus {
+    @include active;
+  }
+  
+
+  @include placeholder;
+
+  &:disabled {
+    @include disabled;
+  }
+}

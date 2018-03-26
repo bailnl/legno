@@ -1,0 +1,60 @@
+// -------- Colors -----------
+$--primary-color          : $--blue-6;
+
+
+// Base Scaffolding Variables
+// ---
+
+
+// Base background color for most components
+$--font-family-no-number  : "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$--font-family            : "Monospaced Number", $--font-family-no-number;
+$--text-color             : fade(#000, 65%);
+$--font-size-base         : 14px;
+$--line-height-base       : 1.5;
+$--border-radius-base     : 4px;
+
+
+// vertical paddings
+$--padding-sm    : 12px; // Form controls and items
+
+// vertical padding for all form controls
+$--control-padding-horizontal: $--padding-sm;
+
+
+// Border color
+$--border-color-base      : hsv(0, 0, 85%);  // base border outline a component
+$--border-width-base      : 1px;            // width of the border for a component
+$--border-style-base      : solid;          // style of a components border
+
+// Outline
+$--outline-blur-size      : 0;
+$--outline-width          : 2px;
+$--outline-color          : $--primary-color;
+
+$--background-color-light : hsv(0, 0, 98%);  // background of header and selected item
+$--background-color-base  : hsv(0, 0, 96%);  // Default grey background color
+
+// Disabled states
+$--disabled-color         : fade(#000, 25%);
+$--disabled-bg            : $--background-color-base;
+$--disabled-color-dark    : fade(#fff, 35%);
+
+
+// Input
+// ---
+$--input-height-base           : 32px;
+$--input-height-lg             : 40px;
+$--input-height-sm             : 24px;
+$--input-padding-horizontal    : $--control-padding-horizontal - 1px;
+$--input-padding-horizontal-base: $--input-padding-horizontal;
+$--input-padding-vertical-base : 4px;
+$--input-padding-vertical-sm   : 1px;
+$--input-padding-vertical-lg   : 6px;
+$--input-placeholder-color     : hsv(0, 0, 75%);
+$--input-color                 : $--text-color;
+$--input-border-color          : $--border-color-base;
+$--input-bg                    : #fff;
+$--input-addon-bg              : $--background-color-light;
+$--input-hover-border-color    : $--primary-color;
+$--input-disabled-bg           : $--disabled-bg;

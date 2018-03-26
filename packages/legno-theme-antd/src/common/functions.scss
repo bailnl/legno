@@ -1,0 +1,3 @@
+@function fade($color, $amount) {
+  @return hsla(hue($color), saturation($color), lightness($color), $amount / 100);
+}

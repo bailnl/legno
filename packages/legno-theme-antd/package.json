@@ -1,0 +1,22 @@
+{
+  "name": "legno-theme-antd",
+  "version": "0.0.0",
+  "description": "Ant design theme for legno",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "keywords": [
+    "antd",
+    "legno",
+    "theme"
+  ],
+  "author": "bailnl",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^3.2.1",
+    "node-sass": "^4.8.3"
+  }
+}
